@@ -1,0 +1,207 @@
+/* 
+1-commen Style
+2-General Style
+3-Sections
+  3.0 Header Section
+  3.1 Home Section 
+  3.2 About Section 
+  3.3 Portofolio Section 
+  3.4 Service Section 
+  3.5 Prices Section
+  3.6 Team Section 
+  3.7 Blog Page 
+  3.8 Contact Section
+  3.9 Footer Section
+*/
+
+/* 1- common */
+/* 
+container
+overlay
+opacity haver
+section header
+section padding
+haver effect 1(left to right)
+haver effect 2(top to button)
+
+ */
+ /* 2- General CSS Style */
+ .clear{
+     clear:both;
+ }
+ 
+ h1,h2,h3,h4,h5,h6,button{
+     font-family: montserrat,sans-serif;
+ }
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;/* css3 */
+ }
+ .container{
+     width: 80%;
+     margin:auto;
+ }
+ body{
+    font-family: 'Varela Round', sans-serif;
+ }
+ .section-header{
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ .section-header .section-title{
+   font-size-adjust: 35px;
+   text-transform: capitalize;
+}
+ .section-header .line{
+    display: block;
+    height: 2px;
+    width: 40px;
+    margin:auto;
+    background-color: #6195ff;
+}
+
+
+/* 3-Sections  */
+/* 3.0 Header Section */
+ .header{
+     
+     position: fixed;
+     width: 100%;
+     z-index:10;
+ }
+
+ .header .logo{
+     width:40%;
+     float:left;
+ }
+ .header .logo img{
+     width: 40%;
+     margin-top:10px;
+ }
+ .header .nav{
+    width:60%;
+    float:left;
+    list-style: none;
+    text-align: right;
+ }
+ .header .nav > li {
+    display:inline-block;
+    
+    text-align:right;
+ }
+ .header .nav > li > a{
+     font-size:14 px;
+     color: white;
+     text-decoration: none;
+     display:block;
+     padding:30px 10px;
+ }
+ .header .nav  > li > a.active:after,
+ .header .nav  > li > a:after{
+ content:"";
+ display:block;
+ width: 0px;
+ height:2px;
+ background-color: blue;
+ transition: 0.5s;
+ }
+ .header .nav  >li a:hover:after{
+     width:100%;
+ }
+
+ .dropdown {
+    position: relative;
+} 
+ .dropdown-menu{
+     position: absolute;
+     background-color:blue;
+     width:150px;
+     text-align: center;
+     left:-50px;
+     top:70%;
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity 0.5s , visibility 0.5s;
+ }
+ .dropdown-menu a{
+  color:#fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+ }
+
+ .dropdown:hover .dropdown-menu{
+     visibility: visible;
+     opacity: 1;
+ }
+ /* Home Section */
+ .home{
+     height:100vh;
+     background-image: url(../images/background/background1.webp);
+     background-position: cover;
+     position: relative;
+ }
+ .home .overlay{
+     position: absolute;
+     width:100%;
+     height:100%;
+     top:0;
+     left:0;
+     background-color: rgba(0,0,0,0.5);
+ }
+
+ .hover-opacity{
+     transition:opacity .5s;
+ }
+ .hover-opacity:hover{
+     opacity: 0.8;
+ }
+ .home-content{
+     background: green;
+     width: 65%;
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+ }
+ .home .title{
+     color:white;
+     font-size: 3.5rem;
+     text-transform: uppercase;
+ }
+ .home .home-description{
+     margin:10px 0;
+     color:white;
+     letter-spacing: 2px;
+     line-height: 1.5;
+ }
+
+ .home .btn{
+    min-width:160;
+     padding:15px 0;
+     border-radius: 5px;
+     border:0;
+     cursor: pointer;
+     font-size: 18px;
+ }
+
+ .home .btn-start{
+  margin-right:10px;
+  background-color: #fff;
+ }
+ .home .btn-learn{
+    background-color: #6195ff;
+    color:#fff;
+ }
+ /* About Section */
+ /* Portofolio Section */
+ /*Service Section */
+ /* Prices Section */
+ /* Team Section */
+
+ /* Blog Page */
+ /* Contact Section */
+ 
